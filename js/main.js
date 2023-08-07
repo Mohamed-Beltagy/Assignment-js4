@@ -21,7 +21,7 @@ function add() {
     if (signUpName.value == "" || signUpName.value == "" || signUpPassword.value == "") {
         document.getElementById("invaledData").innerHTML = `<p class="text-danger">All Input Is Required</p>`
     }
-    if (emailExist() == false) {
+    else if (emailExist() == false) {
         document.getElementById("invaledData").innerHTML = `<p class="text-danger">email already exists</p>`
     }
     else {
